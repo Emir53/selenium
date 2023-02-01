@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  selenium:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python-selenium
+    image: python-selenium
+    hostname: python-selenium
+    ports:
+      - "5500:5500"
+    expose:
+      - "5500"
+    tty: true
+  
+
+
+
+          
+
+
